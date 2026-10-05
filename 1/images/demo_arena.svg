@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 640" font-family="Arial, Helvetica, sans-serif">
+<title>Lab 1 demo arena: two TurtleBot3s swapping between the top-left and bottom-right rooms</title>
+<rect width="760" height="640" fill="#ffffff"/>
+<rect x="40" y="40" width="720" height="480" fill="#f3efe6" rx="3"/>
+<rect x="40" y="40" width="720" height="30" fill="#3a3f47" rx="3"/>
+<rect x="40" y="490" width="720" height="30" fill="#3a3f47" rx="3"/>
+<rect x="40" y="40" width="30" height="480" fill="#3a3f47" rx="3"/>
+<rect x="730" y="40" width="30" height="480" fill="#3a3f47" rx="3"/>
+<rect x="70" y="190" width="156" height="36" fill="#3a3f47" rx="3"/>
+<rect x="280" y="70" width="36" height="156" fill="#3a3f47" rx="3"/>
+<rect x="436" y="70" width="36" height="156" fill="#3a3f47" rx="3"/>
+<rect x="580" y="190" width="150" height="36" fill="#3a3f47" rx="3"/>
+<rect x="70" y="340" width="180" height="36" fill="#3a3f47" rx="3"/>
+<rect x="220" y="274" width="36" height="102" fill="#3a3f47" rx="3"/>
+<rect x="340" y="370" width="36" height="120" fill="#3a3f47" rx="3"/>
+<rect x="478" y="370" width="36" height="120" fill="#3a3f47" rx="3"/>
+<rect x="598" y="358" width="132" height="36" fill="#3a3f47" rx="3"/>
+<rect x="226" y="187" width="54" height="42" fill="#e4572e" fill-opacity="0.18" stroke="#e4572e" stroke-dasharray="6 4" stroke-width="2"/>
+<rect x="514" y="355" width="84" height="42" fill="#e4572e" fill-opacity="0.18" stroke="#e4572e" stroke-dasharray="6 4" stroke-width="2"/>
+<path d="M151 124 C 226 130, 250 178, 250 220 S 340 274, 424 286 S 544 310, 550 364 S 574 424, 595 430" fill="none" stroke="#1f77b4" stroke-width="4" stroke-dasharray="10 7"/>
+<path d="M655 448 C 598 457, 565 424, 562 370 S 508 295, 424 298 S 268 268, 259 220 S 238 154, 214 148" fill="none" stroke="#ff7f0e" stroke-width="4" stroke-dasharray="10 7"/>
+<circle cx="130" cy="121" r="20" fill="#1f77b4"/><text x="130" y="127" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">A</text>
+<circle cx="193" cy="145" r="20" fill="#ffffff" stroke="#c25f00" stroke-width="4"/><text x="193" y="151" font-size="16" font-weight="bold" fill="#c25f00" text-anchor="middle">B</text>
+<circle cx="676" cy="445" r="20" fill="#ff7f0e"/><text x="676" y="451" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">B</text>
+<circle cx="616" cy="433" r="20" fill="#ffffff" stroke="#1f77b4" stroke-width="4"/><text x="616" y="439" font-size="16" font-weight="bold" fill="#1f77b4" text-anchor="middle">A</text>
+<text x="160" y="97" font-size="13" fill="#2b2f36" text-anchor="middle">top-left room: start A, goal B</text>
+<text x="622" y="478" font-size="13" fill="#2b2f36" text-anchor="middle">bottom-right room: start B, goal A</text>
+<text x="289" y="184" font-size="13" fill="#b23a1b" text-anchor="start">doorway</text>
+<text x="604" y="349" font-size="13" fill="#b23a1b" text-anchor="start">doorway</text>
+<circle cx="60" cy="558" r="9" fill="#1f77b4"/><text x="76" y="563" font-size="14" fill="#2b2f36">start</text>
+<circle cx="150" cy="558" r="9" fill="#fff" stroke="#1f77b4" stroke-width="3"/><text x="166" y="563" font-size="14" fill="#2b2f36">goal</text>
+<line x1="230" y1="558" x2="270" y2="558" stroke="#2b2f36" stroke-width="3" stroke-dasharray="8 5"/><text x="278" y="563" font-size="14" fill="#2b2f36">A* path, each robot planning alone</text>
+<rect x="530" y="549" width="22" height="18" fill="#e4572e" fill-opacity="0.18" stroke="#e4572e" stroke-dasharray="4 3"/><text x="560" y="563" font-size="14" fill="#2b2f36">one-robot doorway</text>
+<text x="60" y="590" font-size="13" fill="#6b7280">Dark blocks are the foam walls. Not to scale.</text>
+</svg>
