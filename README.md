@@ -40,10 +40,11 @@ Lectures are on Wednesday mornings and labs on Thursday mornings.
 | 4 | Thu 29 Oct | Python nodes and closed-loop control |
 | 5 | Thu 5 Nov | SLAM with Cartographer |
 | | Thu 12 Nov | Reading week |
-| 6 | Thu 19 Nov | Waypoints and markers |
-| 7 | Thu 26 Nov | Two robots, one network |
-| 8 | Thu 3 Dec | Planning together with CBS |
-| 9 | Thu 10 Dec | Open arena session: run your solutions, record videos and collect results |
+| 6 | Thu 19 Nov | Waypoint navigation with Nav2 |
+| 7 | Thu 26 Nov | ArUco markers with the Pi camera, and putting Task 1 together |
+| 8 | Thu 3 Dec | Two robots, one network |
+| 9 | Thu 10 Dec | Multi-robot planning with CBS |
+| 9–10 | 10–17 Dec | Open arena week: book the arena with the lab technician in your own time, run your solutions, record videos and collect results |
 | 10 | Thu 17 Dec | Challenge show. The report is due at 16:00 the same day |
 
 This schedule may still change. Each lab's own README says what it actually covers.
@@ -57,4 +58,4 @@ The module ends with two tasks on the physical TurtleBot3s, in the arena shown i
 - **Task 1: Target search (one robot).** The robot starts from a given point and visits the entrance of each of three rooms in turn. Each room holds an ArUco marker standing for a fruit. Your group is told which fruit to find, and the robot must read the markers and enter the right room.
 - **Task 2: Multi-robot path finding (two or more robots).** The robots solve the swap you saw in the Lab 1 demo, without collision, using Conflict-Based Search (CBS) or another multi-agent path finding algorithm of your choice.
 
-Labs 6 to 8 build the pieces for these tasks. Lab 9 is for running your solutions in the arena and collecting results, and Lab 10 is where you show them.
+Labs 6 and 7 build Task 1, and Labs 8 and 9 build Task 2. Between Lab 9 and Lab 10 the arena is yours to book for running your solutions and collecting results, and Lab 10 is where you show them.
