@@ -368,6 +368,10 @@ You will watch this rather than run it. Take notes — this is the problem you w
 
 Two Burgers in the arena, swapping rooms through two narrow doorways. Each one plans its own path with A\*, treating the other robot as just another obstacle. Neither knows what the other intends to do next.
 
+![The demo arena in the lab, built from foam blocks on a mat floor](images/arena_photo.jpg)
+
+The arena in the lab, seen from the bottom side of the plan below. The same layout as a plan, with the two robots' tasks:
+
 ![The demo arena: robot A starts in the top-left room and robot B in the bottom-right room, and each must reach the other's starting room](images/demo_arena.svg)
 
 Robot **A** starts in the top-left room and has to reach the bottom-right room. Robot **B** does the opposite. Both shortest routes leave through the same doorway, cross the same open middle, and enter through the same second doorway, and each doorway is wide enough for one robot only.
