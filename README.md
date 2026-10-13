@@ -35,7 +35,7 @@ Lectures are on Wednesday mornings and labs on Thursday mornings.
 | Lab | Date | Topic |
 |---|---|---|
 | 1 | Thu 8 Oct | [Getting set up, and meeting the problem](1/README.md) |
-| 2 | Thu 15 Oct | Services, actions and the ROS 2 communication model |
+| 2 | Thu 15 Oct | [Services, actions and the ROS 2 communication model](2/README.md) |
 | 3 | Thu 22 Oct | TF2, bringup, sensors and odometry |
 | 4 | Thu 29 Oct | Python nodes and closed-loop control |
 | 5 | Thu 5 Nov | SLAM with Cartographer |
