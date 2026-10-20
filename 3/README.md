@@ -4,7 +4,7 @@ In **Lab 1**, you drove a TurtleBot3. In **Lab 2**, you used ROS topics, service
 
 **Today's question:** when we command a robot to move, how do we know where it actually went?
 
-Use your group’s Ubuntu 22.04 / ROS 2 Humble miniPC, assigned TurtleBot3 Burger and approved floor space. **No new installation is needed.** The [original Lab 3](background/README.md) is optional background.
+Use your group’s Ubuntu 22.04 / ROS 2 Humble miniPC, assigned TurtleBot3 Burger and approved floor space. **No new installation is needed.**
 
 **Five checkpoints:** (1) ROS graph → (2) TF2 frames → (3) sensors and RViz → (4) commands versus odometry → (5) predicted versus measured square. This README contains all the tasks: **predict → observe → explain** at each checkpoint. Keep brief notes or permitted screenshots only for measurements you need to compare, especially in Sections 4–5. Do not edit shared lab files; GitHub's preview is read-only. “Go further” is optional.
 
@@ -17,7 +17,7 @@ Use your group’s Ubuntu 22.04 / ROS 2 Humble miniPC, assigned TurtleBot3 Burge
 
 **Start with A, B and C.** Open D only when you need a separate TF observer in Section 4.2. Source `/opt/ros/humble/setup.bash` in each new miniPC terminal; make sure its ROS domain matches your assigned robot.
 
-**Movement safety (as in Lab 1):** clear floor, low speed, observer and known physical stop/power control. **Section 4:** familiar Lab 1 teleop, with its usual precautions. **Section 5:** the custom four-leg controller, **only after** a demonstrator confirms its manual-input safety check on your robot. Space or `s` requests a stop in teleop; **Ctrl+C exits a program, not an emergency stop**. If movement is unexpected, use the physical stop, tell staff and enter no further commands. Never run the historical original controller.
+**Movement safety (as in Lab 1):** clear floor, low speed, observer and known physical stop/power control. **Section 4:** familiar Lab 1 teleop, with its usual precautions. **Section 5:** the custom four-leg controller, **only after** a demonstrator confirms its manual-input safety check on your robot. Space or `s` requests a stop in teleop; **Ctrl+C exits a program, not an emergency stop**. If movement is unexpected, use the physical stop, tell staff and enter no further commands.
 
 ---
 
@@ -415,7 +415,7 @@ remaining = self.segment_length - progress
 
 **Required 3-minute code investigation (read only; do not run yet):** Find `create_publisher`, `create_subscription`, `odom_callback` and `go_straight`. Identify the command and odometry topics, stored pose fields, and why sideways error may remain.
 
-Signed progress cannot ensure odometry freshness, obstacle avoidance or safe stopping. Do **not** edit or execute the controller at this stage. The [historical original controller](background/turtlebot3_relative_move_original.py) is **optional reading only**; never run it on the robot.
+Signed progress cannot ensure odometry freshness, obstacle avoidance or safe stopping. Do **not** edit or execute the controller at this stage.
 
 ### 5.4 Prepare for the physical square
 
@@ -568,4 +568,4 @@ Check that the robot is stationary, close all movement controllers and follow st
 | No LiDAR/IMU samples or laser points | Publisher, offered QoS, compatible **Best Effort** and RViz Status; silence isn't proof of failure |
 | Unexpected motion or command publisher | Physical stop, **ABORTED**, no new commands; contact staff |
 
-This Lab 3 folder contains this README, two Python files and an optional `background/` folder with the original Lab 3 and its historical controller (reading only). Staff qualification material stays outside it. **The original controller is not a student movement option.**
+This Lab 3 folder contains this README and two Python files.
