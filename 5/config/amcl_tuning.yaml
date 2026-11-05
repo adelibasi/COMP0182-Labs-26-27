@@ -1,0 +1,19 @@
+# minimum particle count retained during localisation
+# higher counts use more CPU
+amcl_min_particles: 1000
+
+# maximum particle count available for global localisation
+# higher counts cover more hypotheses
+amcl_max_particles: 5000
+
+# travel in metres before processing another scan
+# lower values update more often
+amcl_update_distance_m: 0.05
+
+# rotation in radians before processing another scan
+# lower values update more often
+amcl_update_angle_rad: 0.05
+
+# laser readings sampled per update, limited by the readings in each scan
+# higher counts use more CPU without increasing the sensor's resolution
+amcl_scan_beams: 120

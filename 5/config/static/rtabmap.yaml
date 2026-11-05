@@ -1,0 +1,25 @@
+rtabmap:
+  ros__parameters:
+    qos: 1
+    qos_scan: 2
+    map_frame_id: map
+    publish_tf: true
+    subscribe_scan: true
+    subscribe_depth: false
+    subscribe_rgb: false
+    subscribe_rgbd: false
+    subscribe_stereo: false
+    map_always_update: true
+    map_empty_ray_tracing: true
+    Reg/Strategy: "1"
+    Reg/Force3DoF: "true"
+    RGBD/NeighborLinkRefining: "true"
+    RGBD/ProximityByTime: "false"
+    Optimizer/PriorsIgnored: "true"
+    Optimizer/GravitySigma: "0"
+    Grid/Sensor: "0"
+    Grid/3D: "false"
+    Grid/RangeMax: "3.5"
+    Grid/RayTracing: "true"
+    Grid/Scan2dUnknownSpaceFilled: "false"
+    Mem/IncrementalMemory: "true"

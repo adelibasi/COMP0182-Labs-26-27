@@ -38,7 +38,7 @@ Lectures are on Wednesday mornings and labs on Thursday mornings.
 | 2 | Thu 15 Oct | [Services, actions and the ROS 2 communication model](2/README.md) |
 | 3 | Thu 22 Oct | [TF2, sensors, odometry and a robot square](3/README.md) |
 | 4 | Thu 29 Oct | [Python nodes and closed-loop control](4/README.md) |
-| 5 | Thu 5 Nov | SLAM with Cartographer |
+| 5 | Thu 5 Nov | [SLAM: mapping in simulation and on the real robot](5/README.md) |
 | | Thu 12 Nov | Reading week |
 | 6 | Thu 19 Nov | Waypoint navigation with Nav2 |
 | 7 | Thu 26 Nov | ArUco markers with the Pi camera, and putting Task 1 together |

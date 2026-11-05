@@ -1,0 +1,16 @@
+# Edit ONE setting, restart RTAB-Map, and compare a similar journey.
+# These are RTAB-Map's actual parameter names. The launcher converts numbers
+# to the strings required by RTAB-Map. Restore the defaults after experimenting.
+
+# Maximum mapping updates per second; 0 means process every available input.
+Rtabmap/DetectionRate: 1.0
+
+# Minimum travel (metres) before storing another mapping node.
+RGBD/LinearUpdate: 0.05
+
+# Minimum rotation (radians) before storing another mapping node.
+RGBD/AngularUpdate: 0.05
+
+# Occupancy-grid resolution (metres per cell). Smaller uses more cells/memory;
+# it does not make the LiDAR sensor itself more accurate.
+Grid/CellSize: 0.05
