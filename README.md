@@ -40,7 +40,7 @@ Lectures are on Wednesday mornings and labs on Thursday mornings.
 | 4 | Thu 29 Oct | [Python nodes and closed-loop control](4/README.md) |
 | 5 | Thu 5 Nov | [SLAM: mapping in simulation and on the real robot](5/README.md) |
 | | Thu 12 Nov | Reading week |
-| 6 | Thu 19 Nov | Waypoint navigation with Nav2 |
+| 6 | Thu 19 Nov | [A* path planning and Nav2 navigation](6/README.md) |
 | 7 | Thu 26 Nov | ArUco markers with the Pi camera, and putting Task 1 together |
 | 8 | Thu 3 Dec | Two robots, one network |
 | 9 | Thu 10 Dec | Multi-robot planning with CBS |

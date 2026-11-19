@@ -1,0 +1,10 @@
+/**:
+  ros__parameters:
+    global_frame_id: map
+    tf_broadcast: true
+    set_initial_pose: false
+    always_reset_initial_pose: true
+    robot_model_type: nav2_amcl::DifferentialMotionModel
+    laser_model_type: likelihood_field
+    laser_max_range: -1.0
+    # tuning is validated and overlaid by amcl.launch.py

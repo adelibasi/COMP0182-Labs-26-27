@@ -1,0 +1,30 @@
+# half-width of the square robot footprint in metres
+body_radius_m: 0.13
+
+# extra clearance added to each side of the footprint in metres
+body_clearance_m: 0.02
+
+# distance in metres over which obstacles add cost to the costmaps
+obstacle_cost_radius_m: 0.55
+
+# rate at which obstacle cost falls with distance; higher falls faster
+obstacle_cost_decay_factor: 3.0
+
+# distance in metres at which the controller slows near obstacles
+# keep within the obstacle cost radius
+slowdown_distance_m: 0.4
+
+# desired forward speed and velocity limit in metres per second
+max_speed_mps: 0.18
+
+# rotation speed and angular velocity limit in radians per second
+max_turn_rate_radps: 0.5
+
+# distance in metres ahead on the path used by the controller
+path_lookahead_m: 0.3
+
+# allowed position error at the goal in metres
+goal_position_tolerance_m: 0.10
+
+# allowed heading error at the goal in radians
+goal_heading_tolerance_rad: 0.15
