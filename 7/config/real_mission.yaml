@@ -1,0 +1,21 @@
+# staff assign each group's target
+target_fruit: null
+marker_dictionary: DICT_4X4_50
+marker_id_to_fruit:
+  7: banana
+  23: apple
+  42: strawberry
+
+# record [x, y, yaw] in the map frame, in metres and radians
+# record the start and both poses in each room
+start_pose: [null, null, null]
+rooms:
+  room_1:
+    view_pose: [null, null, null]
+    goal_pose: [null, null, null]
+  room_2:
+    view_pose: [null, null, null]
+    goal_pose: [null, null, null]
+  room_3:
+    view_pose: [null, null, null]
+    goal_pose: [null, null, null]

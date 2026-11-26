@@ -1,0 +1,17 @@
+material Lab7Textured/ArUco7
+{
+  technique
+  {
+    pass
+    {
+      lighting off
+      ambient 1 1 1 1
+      diffuse 1 1 1 1
+      texture_unit
+      {
+        texture aruco_7.png
+        filtering none
+      }
+    }
+  }
+}

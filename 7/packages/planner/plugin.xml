@@ -1,0 +1,6 @@
+<library path="planner">
+  <class type="planner::StudentPlanner" base_class_type="nav2_core::GlobalPlanner"
+         name="planner/StudentPlanner">
+    <description>Calls the Python A* service; has no fallback.</description>
+  </class>
+</library>

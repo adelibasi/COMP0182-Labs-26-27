@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>mission</name><version>0.1.0</version>
+  <description>Lab 7 autonomous search exercise and marker observation reader.</description>
+  <maintainer email="lab@example.invalid">MAS lab</maintainer><license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <exec_depend>action_msgs</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>nav2_msgs</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>tf2_ros_py</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

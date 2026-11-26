@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1552.1" height="1538.3" viewBox="0 0 1552.1 1538.3">
+<title>Teaching arena: continuous-wall reconstruction</title>
+<desc>Top view in arena-local axes. Scale comes from an earlier simulator model and needs physical measurement. No official start or room labels are assigned.</desc>
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#23313d">
+<text x="36" y="36" font-size="24" font-weight="bold">Teaching arena · top view</text>
+<text x="36" y="63" font-size="15">Continuous walls; source-derived scale awaiting measurement</text>
+<text x="788.6" y="92" font-size="14" text-anchor="middle">Rear</text>
+<rect x="90.0" y="112.0" width="1397.14" height="1298.31" fill="#e8d4a9"/>
+<rect x="90.00" y="1344.31" width="1397.14" height="66.00" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>perimeter_front</title></rect>
+<rect x="90.00" y="112.00" width="1397.14" height="66.00" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>perimeter_rear</title></rect>
+<rect x="90.00" y="178.00" width="66.00" height="1166.31" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>perimeter_left</title></rect>
+<rect x="1421.14" y="178.00" width="66.00" height="1166.31" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>perimeter_right</title></rect>
+<rect x="607.00" y="970.31" width="66.00" height="374.00" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>front_divider_left</title></rect>
+<rect x="904.00" y="970.31" width="66.00" height="374.00" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>front_divider_right</title></rect>
+<rect x="607.00" y="178.00" width="66.00" height="374.31" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>rear_divider_left</title></rect>
+<rect x="904.00" y="178.00" width="66.00" height="374.31" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>rear_divider_right</title></rect>
+<rect x="156.00" y="992.31" width="242.00" height="66.00" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>left_front_protrusion</title></rect>
+<rect x="332.00" y="750.31" width="66.00" height="242.00" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>left_front_return</title></rect>
+<rect x="156.00" y="455.51" width="242.00" height="66.00" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>left_rear_protrusion</title></rect>
+<rect x="1190.00" y="992.31" width="231.14" height="66.00" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>right_front_protrusion</title></rect>
+<rect x="1190.00" y="455.51" width="231.14" height="66.00" fill="#4d5559" stroke="#2f373b" stroke-width="1"><title>right_rear_protrusion</title></rect>
+<circle cx="788.57" cy="761.16" r="6" fill="#246eaf"/>
+<path d="M 796.57 761.16 h 24 m -6 -4 l 6 4 -6 4" fill="none" stroke="#246eaf" stroke-width="2"/>
+<text x="788.6" y="1436.3" font-size="14" text-anchor="middle">Front / photograph viewpoint</text>
+<text x="788.6" y="1459.3" font-size="14" text-anchor="middle">Source envelope: 6.351 m × 5.901 m · wall height 0.30 m</text>
+<circle cx="96.0" cy="1489.3" r="5" fill="#246eaf"/>
+<text x="110.0" y="1494.3" font-size="13">Provisional initial pose; not coursework point A</text>
+<text x="90.0" y="1516.3" font-size="12" fill="#56616a">Arena axes: x right, y towards rear. World yaw: 42.75°.</text>
+</g></svg>

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "description": "Enlarged simulation practice arena: photographed layout at twice the previous XY scale; robot dimensions are unchanged.",
+  "provenance": {
+    "geometry_source": "Lab 6 simulation world (lab.sdf) snapshot",
+    "source_sha256": "004133cdffdb6773e7f794b60d68d75a14513533b56b109acadbf9e8fc9bfb0f",
+    "layout_reference": "User-supplied arena photograph, 19 November 2026; image is not distributed in this package.",
+    "scale_status": "SIM PRACTICE SCALE: length and width are doubled from the previous reconstruction at the user request. This is not a surveyed physical arena; supplied maps/week5 files retain their original scale.",
+    "reconstruction_notes": [
+      "The source's 133 fragmented collision boxes are replaced by 13 continuous boxes with the same broad layout.",
+      "Double all arena-local XY geometry while retaining the world rotation and world-centre position; the neutral robot spawn stays at the same world pose.",
+      "Wall thickness scales from 0.15 m to 0.30 m in plan. Wall height remains 0.30 m; the robot model, sensor ranges and map resolution are unchanged.",
+      "The photograph establishes arrangement, not metric divider lengths: perspective alone does not establish whether the near dividers are longer.",
+      "The near-left L, three other side protrusions and open central corridor are retained.",
+      "No official coursework start, B1/B2/B3 entrance or fruit assignment is encoded."
+    ],
+    "simulation_scale_xy": 2.0,
+    "unscaled_arena_size_m": [
+      3.175328294621297,
+      2.9507141241860784
+    ]
+  },
+  "arena_size_m": [
+    6.350656589242594,
+    5.901428248372157
+  ],
+  "wall_height_m": 0.3,
+  "overview_camera_height_m": 10.5,
+  "world_from_arena": {
+    "translation_m": [
+      -1.4342544794555774,
+      -4.126020027066922,
+      0.0
+    ],
+    "yaw_rad": 0.7461,
+    "convention": "world_xy = R(yaw_rad) * arena_xy + translation_m.xy; world_yaw = arena_yaw + yaw_rad"
+  },
+  "spawn_pose_arena": [
+    3.175328294621297,
+    2.9507141241860784,
+    0.0
+  ],
+  "map": {
+    "resolution_m": 0.05,
+    "padding_m": 0.3,
+    "occupied_pixel": 0,
+    "free_pixel": 254,
+    "unknown_pixel": 205,
+    "occupied_thresh": 0.65,
+    "free_thresh": 0.196,
+    "raster_policy": "A cell is occupied if its closed square intersects any wall collision footprint. Exterior cells are unknown."
+  },
+  "walls": [
+    {"name": "perimeter_front", "bounds_m": [0.0, 0.0, 6.350656589242594, 0.3]},
+    {"name": "perimeter_rear", "bounds_m": [0.0, 5.601428248372157, 6.350656589242594, 5.901428248372157]},
+    {"name": "perimeter_left", "bounds_m": [0.0, 0.3, 0.3, 5.601428248372157]},
+    {"name": "perimeter_right", "bounds_m": [6.050656589242594, 0.3, 6.350656589242594, 5.601428248372157]},
+    {"name": "front_divider_left", "bounds_m": [2.35, 0.3, 2.65, 2.0]},
+    {"name": "front_divider_right", "bounds_m": [3.7, 0.3, 4.0, 2.0]},
+    {"name": "rear_divider_left", "bounds_m": [2.35, 3.9, 2.65, 5.601428248372157]},
+    {"name": "rear_divider_right", "bounds_m": [3.7, 3.9, 4.0, 5.601428248372157]},
+    {"name": "left_front_protrusion", "bounds_m": [0.3, 1.6, 1.4, 1.9]},
+    {"name": "left_front_return", "bounds_m": [1.1, 1.9, 1.4, 3.0]},
+    {"name": "left_rear_protrusion", "bounds_m": [0.3, 4.04, 1.4, 4.34]},
+    {"name": "right_front_protrusion", "bounds_m": [5.0, 1.6, 6.050656589242594, 1.9]},
+    {"name": "right_rear_protrusion", "bounds_m": [5.0, 4.04, 6.050656589242594, 4.34]}
+  ]
+}

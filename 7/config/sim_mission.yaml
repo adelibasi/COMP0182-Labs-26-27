@@ -1,0 +1,15 @@
+target_fruit: apple
+
+# record [x, y, yaw] in the map frame, in metres and radians
+# record the start and both poses in each room
+start_pose: [null, null, null]
+rooms:
+  room_1:
+    view_pose: [null, null, null]
+    goal_pose: [null, null, null]
+  room_2:
+    view_pose: [null, null, null]
+    goal_pose: [null, null, null]
+  room_3:
+    view_pose: [null, null, null]
+    goal_pose: [null, null, null]

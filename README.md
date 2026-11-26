@@ -41,7 +41,7 @@ Lectures are on Wednesday mornings and labs on Thursday mornings.
 | 5 | Thu 5 Nov | [SLAM: mapping in simulation and on the real robot](5/README.md) |
 | | Thu 12 Nov | Reading week |
 | 6 | Thu 19 Nov | [A* path planning and Nav2 navigation](6/README.md) |
-| 7 | Thu 26 Nov | ArUco markers with the Pi camera, and putting Task 1 together |
+| 7 | Thu 26 Nov | [ArUco markers with the Pi camera, and putting Task 1 together](7/README.md) |
 | 8 | Thu 3 Dec | Two robots, one network |
 | 9 | Thu 10 Dec | Multi-robot planning with CBS |
 | 9–10 | 10–17 Dec | Open arena week: book the arena with the lab technician in your own time, run your solutions, record videos and collect results |

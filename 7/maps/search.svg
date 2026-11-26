@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="954" viewBox="0 0 1000 954" role="img" aria-labelledby="plan-title plan-description">
+  <title id="plan-title">SIM practice room views and goals</title>
+  <desc id="plan-description">Arena floor plan with start A, a sign view and a parking goal for each room, and the visit order for Rooms 1 to 3. Use the camera to identify the fruit in each room.</desc>
+  <style>text { font-family: 'DejaVu Sans', Arial, sans-serif; }</style>
+  <rect x="0" y="0" width="1000" height="954" fill="#faf8f2" />
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#1767cf" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#d8650d" />
+    </marker>
+  </defs>
+  <text x="40" y="48" font-size="31" fill="#23333d" font-weight="bold" text-anchor="start">SIM practice · 6.35 × 5.90 m</text>
+  <text x="40" y="83" font-size="21" fill="#23333d" font-weight="normal" text-anchor="start">Start at A. Read Rooms 1 → 2 → 3, then park in the selected room.</text>
+  <text x="420" y="117" font-size="17" fill="#23333d" font-weight="bold" text-anchor="middle">REAR</text>
+  <rect x="55" y="135" width="730" height="678.362" fill="#fffefa" stroke="#d8d9d4" stroke-width="1" />
+  <g id="walls" fill="#727b80">
+    <rect x="55" y="778.877" width="730" height="34.485" data-wall="perimeter_front" />
+    <rect x="55" y="135" width="730" height="34.485" data-wall="perimeter_rear" />
+    <rect x="55" y="169.485" width="34.485" height="609.393" data-wall="perimeter_left" />
+    <rect x="750.515" y="169.485" width="34.485" height="609.393" data-wall="perimeter_right" />
+    <rect x="325.13" y="583.464" width="34.485" height="195.413" data-wall="front_divider_left" />
+    <rect x="480.31" y="583.464" width="34.485" height="195.413" data-wall="front_divider_right" />
+    <rect x="325.13" y="169.485" width="34.485" height="195.577" data-wall="rear_divider_left" />
+    <rect x="480.31" y="169.485" width="34.485" height="195.577" data-wall="rear_divider_right" />
+    <rect x="89.485" y="594.959" width="126.444" height="34.485" data-wall="left_front_protrusion" />
+    <rect x="181.444" y="468.516" width="34.485" height="126.444" data-wall="left_front_return" />
+    <rect x="89.485" y="314.484" width="126.444" height="34.485" data-wall="left_rear_protrusion" />
+    <rect x="629.744" y="594.959" width="120.772" height="34.485" data-wall="right_front_protrusion" />
+    <rect x="629.744" y="314.484" width="120.772" height="34.485" data-wall="right_rear_protrusion" />
+  </g>
+  <g id="visit-order" fill="none" stroke="#1767cf" stroke-width="3" stroke-dasharray="8 6">
+    <line x1="397.441" y1="465.991" x2="285.407" y2="425.32" marker-end="url(#arrow-blue)" />
+    <line x1="285.908" y1="416.789" x2="395" y2="416.789" marker-end="url(#arrow-blue)" />
+    <line x1="444" y1="416.789" x2="558.764" y2="416.789" marker-end="url(#arrow-blue)" />
+  </g>
+  <line x1="420" y1="451.181" x2="420" y2="441.995" stroke="#d8650d" stroke-width="3" marker-end="url(#arrow-orange)" />
+  <circle cx="420" cy="474.181" r="20" fill="#d8650d" stroke="white" stroke-width="2" />
+  <text x="420" y="480.181" font-size="18" fill="white" font-weight="bold" text-anchor="middle">A</text>
+  <line x1="261.908" y1="393.789" x2="261.908" y2="370.809" stroke="#1767cf" stroke-width="3" marker-end="url(#arrow-blue)" />
+  <circle cx="261.908" cy="416.789" r="20" fill="#1767cf" stroke="white" stroke-width="2" />
+  <text x="261.908" y="422.789" font-size="18" fill="white" font-weight="bold" text-anchor="middle">1</text>
+  <rect x="245.908" y="245.608" width="32" height="32" fill="#087f59" stroke="white" stroke-width="2" />
+  <text x="261.908" y="267.608" font-size="17" fill="white" font-weight="bold" text-anchor="middle">1</text>
+  <text x="261.908" y="298.608" font-size="16" fill="#087f59" font-weight="normal" text-anchor="middle">Room 1</text>
+  <line x1="248.114" y1="171.948" x2="275.702" y2="171.948" stroke="#14191d" stroke-width="6" />
+  <line x1="420" y1="393.789" x2="420" y2="370.809" stroke="#1767cf" stroke-width="3" marker-end="url(#arrow-blue)" />
+  <circle cx="420" cy="416.789" r="20" fill="#1767cf" stroke="white" stroke-width="2" />
+  <text x="420" y="422.789" font-size="18" fill="white" font-weight="bold" text-anchor="middle">2</text>
+  <rect x="404" y="245.608" width="32" height="32" fill="#087f59" stroke="white" stroke-width="2" />
+  <text x="420" y="267.608" font-size="17" fill="white" font-weight="bold" text-anchor="middle">2</text>
+  <text x="420" y="298.608" font-size="16" fill="#087f59" font-weight="normal" text-anchor="middle">Room 2</text>
+  <line x1="406.206" y1="171.948" x2="433.794" y2="171.948" stroke="#14191d" stroke-width="6" />
+  <line x1="583.764" y1="393.789" x2="583.764" y2="370.809" stroke="#1767cf" stroke-width="3" marker-end="url(#arrow-blue)" />
+  <circle cx="583.764" cy="416.789" r="20" fill="#1767cf" stroke="white" stroke-width="2" />
+  <text x="583.764" y="422.789" font-size="18" fill="white" font-weight="bold" text-anchor="middle">3</text>
+  <rect x="567.764" y="245.608" width="32" height="32" fill="#087f59" stroke="white" stroke-width="2" />
+  <text x="583.764" y="267.608" font-size="17" fill="white" font-weight="bold" text-anchor="middle">3</text>
+  <text x="583.764" y="298.608" font-size="16" fill="#087f59" font-weight="normal" text-anchor="middle">Room 3</text>
+  <line x1="569.97" y1="171.948" x2="597.558" y2="171.948" stroke="#14191d" stroke-width="6" />
+  <text x="820" y="157" font-size="24" fill="#23333d" font-weight="bold" text-anchor="start">Key</text>
+  <circle cx="832" cy="196" r="10" fill="#d8650d" />
+  <text x="853" y="202" font-size="19" fill="#23333d" font-weight="normal" text-anchor="start">Start</text>
+  <circle cx="832" cy="245" r="10" fill="#1767cf" />
+  <text x="853" y="251" font-size="19" fill="#23333d" font-weight="normal" text-anchor="start">View pose</text>
+  <rect x="822" y="284" width="20" height="20" fill="#087f59" />
+  <text x="853" y="300" font-size="19" fill="#23333d" font-weight="normal" text-anchor="start">Parking goal</text>
+  <line x1="820" y1="344" x2="844" y2="344" stroke="#14191d" stroke-width="6" />
+  <text x="853" y="351" font-size="19" fill="#23333d" font-weight="normal" text-anchor="start">Marker</text>
+  <line x1="820" y1="395" x2="847" y2="395" stroke="#1767cf" stroke-width="3" stroke-dasharray="5 4" marker-end="url(#arrow-blue)" />
+  <text x="853" y="402" font-size="17" fill="#23333d" font-weight="normal" text-anchor="start">Visit order</text>
+  <text x="820" y="460" font-size="17" fill="#23333d" font-weight="normal" text-anchor="start">Small arrows</text>
+  <text x="820" y="484" font-size="17" fill="#23333d" font-weight="normal" text-anchor="start">show facing.</text>
+  <text x="820" y="550" font-size="17" fill="#23333d" font-weight="normal" text-anchor="start">Stop at each view.</text>
+  <text x="820" y="574" font-size="17" fill="#23333d" font-weight="normal" text-anchor="start">Read the marker</text>
+  <text x="820" y="598" font-size="17" fill="#23333d" font-weight="normal" text-anchor="start">in the camera.</text>
+  <text x="820" y="664" font-size="17" fill="#23333d" font-weight="normal" text-anchor="start">After all visits,</text>
+  <text x="820" y="688" font-size="17" fill="#23333d" font-weight="normal" text-anchor="start">drive to the goal</text>
+  <text x="820" y="712" font-size="17" fill="#23333d" font-weight="normal" text-anchor="start">in the target room.</text>
+  <text x="420" y="841.362" font-size="17" fill="#23333d" font-weight="bold" text-anchor="middle">FRONT</text>
+  <text x="40" y="888.362" font-size="19" fill="#23333d" font-weight="normal" text-anchor="start">Example views and goals in the SIM arena. Record your own poses in Task 1.</text>
+  <text x="40" y="919.362" font-size="17" fill="#23333d" font-weight="normal" text-anchor="start">Use the robot camera to identify the fruit in each room.</text>
+</svg>

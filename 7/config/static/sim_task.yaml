@@ -1,0 +1,48 @@
+# simulator setup and camera settings. Record your poses in config/sim_mission.yaml
+# planar poses use the arena axes in maps/search.svg: x right, y towards the rear
+# the SIM launch converts these to world coordinates using world_from_arena
+schema_version: 1
+profile: sim_practice
+marker_dictionary: DICT_4X4_50
+marker_id_to_fruit:
+  7: banana
+  23: apple
+  42: strawberry
+
+markers:
+  black_square_m: 0.18
+  board_size_m: 0.24
+  placements:
+    B1:
+      id: 7
+      position_arena_m: [1.8, 5.58, 0.16]
+      facing_yaw_arena_rad: -1.5707963267948966
+    B2:
+      id: 23
+      position_arena_m: [3.175328294621297, 5.58, 0.16]
+      facing_yaw_arena_rad: -1.5707963267948966
+    B3:
+      id: 42
+      position_arena_m: [4.6, 5.58, 0.16]
+      facing_yaw_arena_rad: -1.5707963267948966
+
+start:
+  name: A
+  pose_arena: [3.175328294621297, 2.9507141241860784, 1.5707963267948966]
+
+visit_order: [B1, B2, B3]
+stations:
+  B1:
+    observation_pose_arena: [1.8, 3.45, 1.5707963267948966]
+    entry_pose_arena: [1.8, 4.8, 1.5707963267948966]
+  B2:
+    observation_pose_arena: [3.175328294621297, 3.45, 1.5707963267948966]
+    entry_pose_arena: [3.175328294621297, 4.8, 1.5707963267948966]
+  B3:
+    observation_pose_arena: [4.6, 3.45, 1.5707963267948966]
+    entry_pose_arena: [4.6, 4.8, 1.5707963267948966]
+
+observation:
+  consistent_frames: 3
+  max_image_age_s: 1.0
+  window_seconds: 10.0

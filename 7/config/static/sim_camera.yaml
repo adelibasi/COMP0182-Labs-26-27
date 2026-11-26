@@ -1,0 +1,9 @@
+/**:
+  ros__parameters:
+    camera.image_raw.enable_pub_plugins: [image_transport/ffmpeg]
+    camera.image_raw.ffmpeg.encoder: libx264
+    camera.image_raw.ffmpeg.encoder_av_options: "preset:ultrafast,tune:zerolatency,profile:baseline,x264-params:repeat-headers=1"
+    camera.image_raw.ffmpeg.pixel_format: yuv420p
+    camera.image_raw.ffmpeg.bit_rate: 0
+    camera.image_raw.ffmpeg.gop_size: 1
+    camera.image_raw.ffmpeg.max_b_frames: 0

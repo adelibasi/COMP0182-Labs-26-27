@@ -1,0 +1,7 @@
+nav2_msgs/Costmap costmap
+geometry_msgs/PoseStamped start
+geometry_msgs/PoseStamped goal
+---
+bool success
+string error
+nav_msgs/Path path

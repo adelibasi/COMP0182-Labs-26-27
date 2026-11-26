@@ -1,0 +1,6 @@
+/.env
+/ros2_ws/
+/logs/
+__pycache__/
+*.py[cod]
+.pytest_cache/

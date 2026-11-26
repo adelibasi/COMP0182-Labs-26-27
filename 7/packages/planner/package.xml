@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>planner</name><version>0.1.0</version>
+  <description>Nav2 bridge and service for the student Python A* planner.</description>
+  <maintainer email="lab@example.invalid">MAS lab</maintainer><license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>pluginlib</depend><depend>rclcpp</depend><depend>nav2_core</depend>
+  <depend>nav2_costmap_2d</depend><depend>nav2_msgs</depend><depend>nav_msgs</depend>
+  <depend>planner_interfaces</depend>
+  <exec_depend>geometry_msgs</exec_depend><exec_depend>rclpy</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

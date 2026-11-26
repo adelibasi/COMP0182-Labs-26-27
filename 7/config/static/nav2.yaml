@@ -1,0 +1,173 @@
+bt_navigator:
+  ros__parameters:
+    global_frame: map
+    transform_tolerance: 0.2
+    robot_base_frame: $(var agent_name)/base_footprint
+    odom_topic: /$(var agent_name)/odom
+    default_nav_to_pose_bt_xml: $(var lab_config_dir)/student_navigation.xml
+
+planner_server:
+  ros__parameters:
+    planner_plugins: [Student]
+    Student:
+      plugin: planner/StudentPlanner
+
+controller_server:
+  ros__parameters:
+    controller_frequency: 20.0
+    failure_tolerance: 0.5
+    odom_topic: /$(var agent_name)/odom
+    progress_checker_plugins: [progress_checker]
+    goal_checker_plugins: [goal_checker]
+    controller_plugins: [FollowPath]
+    progress_checker:
+      plugin: nav2_controller::SimpleProgressChecker
+      required_movement_radius: 0.05
+      movement_time_allowance: 10.0
+    goal_checker:
+      plugin: nav2_controller::SimpleGoalChecker
+      xy_goal_tolerance: $(var goal_position_tolerance_m)
+      yaw_goal_tolerance: $(var goal_heading_tolerance_rad)
+      stateful: true
+    FollowPath:
+      plugin: nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
+      desired_linear_vel: $(var max_speed_mps)
+      lookahead_dist: $(var path_lookahead_m)
+      transform_tolerance: 0.2
+      min_approach_linear_velocity: 0.03
+      regulated_linear_scaling_min_speed: 0.03
+      rotate_to_heading_angular_vel: $(var max_turn_rate_radps)
+      max_angular_accel: 0.5
+      use_collision_detection: true
+      allow_reversing: false
+      use_rotate_to_heading: true
+      max_allowed_time_to_collision_up_to_carrot: 1.0
+      use_cost_regulated_linear_velocity_scaling: true
+      cost_scaling_dist: $(var slowdown_distance_m)
+      inflation_cost_scaling_factor: $(var obstacle_cost_decay_factor)
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      global_frame: map
+      robot_base_frame: $(var agent_name)/base_footprint
+      update_frequency: 2.0
+      publish_frequency: 1.0
+      resolution: 0.05
+      footprint: '$(var collision_footprint)'
+      footprint_padding: 0.0
+      track_unknown_space: true
+      always_send_full_costmap: true
+      plugins: [static_layer, obstacle_layer, inflation_layer]
+      static_layer:
+        plugin: nav2_costmap_2d::StaticLayer
+        map_topic: /map
+        map_subscribe_transient_local: true
+      obstacle_layer:
+        plugin: nav2_costmap_2d::ObstacleLayer
+        observation_sources: scan
+        scan:
+          topic: /$(var agent_name)/scan
+          data_type: LaserScan
+          min_obstacle_height: 0.0
+          max_obstacle_height: 2.0
+          marking: true
+          clearing: true
+          inf_is_valid: true
+          obstacle_max_range: 3.4
+          raytrace_max_range: 3.5
+      inflation_layer:
+        plugin: nav2_costmap_2d::InflationLayer
+        inflation_radius: $(var obstacle_cost_radius_m)
+        cost_scaling_factor: $(var obstacle_cost_decay_factor)
+
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      global_frame: $(var agent_name)/odom
+      robot_base_frame: $(var agent_name)/base_footprint
+      update_frequency: 10.0
+      publish_frequency: 2.0
+      rolling_window: true
+      width: 3
+      height: 3
+      resolution: 0.025
+      footprint: '$(var collision_footprint)'
+      footprint_padding: 0.0
+      track_unknown_space: true
+      always_send_full_costmap: true
+      plugins: [obstacle_layer, inflation_layer]
+      obstacle_layer:
+        plugin: nav2_costmap_2d::ObstacleLayer
+        observation_sources: scan
+        scan:
+          topic: /$(var agent_name)/scan
+          data_type: LaserScan
+          min_obstacle_height: 0.0
+          max_obstacle_height: 2.0
+          marking: true
+          clearing: true
+          inf_is_valid: true
+          obstacle_max_range: 3.4
+          raytrace_max_range: 3.5
+      inflation_layer:
+        plugin: nav2_costmap_2d::InflationLayer
+        inflation_radius: $(var obstacle_cost_radius_m)
+        cost_scaling_factor: $(var obstacle_cost_decay_factor)
+
+behavior_server:
+  ros__parameters:
+    local_frame: $(var agent_name)/odom
+    global_frame: map
+    robot_base_frame: $(var agent_name)/base_footprint
+    behavior_plugins: [spin, backup, wait]
+    spin:
+      plugin: nav2_behaviors/Spin
+    backup:
+      plugin: nav2_behaviors/BackUp
+    wait:
+      plugin: nav2_behaviors/Wait
+    max_rotational_vel: $(var max_turn_rate_radps)
+    min_rotational_vel: 0.1
+    rotational_acc_lim: 0.5
+
+velocity_smoother:
+  ros__parameters:
+    smoothing_frequency: 20.0
+    feedback: OPEN_LOOP
+    max_velocity: [$(var max_speed_mps), 0.0, $(var max_turn_rate_radps)]
+    min_velocity: [0.0, 0.0, -$(var max_turn_rate_radps)]
+    max_accel: [1.0, 0.0, 0.5]
+    max_decel: [-1.0, 0.0, -0.5]
+    velocity_timeout: 0.5
+    odom_topic: /$(var agent_name)/odom
+
+collision_monitor:
+  ros__parameters:
+    base_frame_id: $(var agent_name)/base_footprint
+    odom_frame_id: $(var agent_name)/odom
+    cmd_vel_in_topic: cmd_vel_smoothed
+    cmd_vel_out_topic: /$(var agent_name)/cmd_vel
+    source_timeout: 0.5
+    stop_pub_timeout: 1.0
+    polygons: [Stop]
+    Stop:
+      type: polygon
+      action_type: approach
+      points: '$(var collision_footprint)'
+      time_before_collision: 1.0
+      simulation_time_step: 0.05
+      min_points: 1
+      visualize: false
+    observation_sources: [scan]
+    scan:
+      type: scan
+      topic: /$(var agent_name)/scan
+
+waypoint_follower:
+  ros__parameters:
+    stop_on_failure: true
+    waypoint_task_executor_plugin: wait_at_waypoint
+    wait_at_waypoint:
+      plugin: nav2_waypoint_follower::WaitAtWaypoint
+      enabled: false
